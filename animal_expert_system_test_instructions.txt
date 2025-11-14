@@ -1,0 +1,20 @@
+# Example test instructions for animal_expert_system.pl
+
+1) Load the Prolog file in SWI-Prolog:
+   ?- [animal_expert_system].
+
+2) Run interactive mode:
+   ?- suggest.
+
+3) Example interactive answers:
+   Are you an adult or a teenager?: adult.
+   What genre of animal do you prefer? (predator/pet): predator.
+   What is the purpose? (protection/adoption/breeding/hunt): protection.
+   Do you prefer an animal with (fur/feathers/leather)?: fur.
+   What is the size of animal do you prefer? (small/large): small.
+   What is the right cost for you? (low/medium/high): low.
+   => Recommended animal: dog
+
+4) Example direct query:
+   ?- animal(Name, pet, adoption, teenager, leather, small, high).
+   Name = turtle.
